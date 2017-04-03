@@ -16,6 +16,10 @@ $nombre_restaurante=$_POST['nombre_restaurante'];
 
 $query_search = "insert into venta(idventa,fecha,nombre_restaurante) values ('".$idventa."','".$fecha."','".$nombre_restaurante."')";//Sentencia sql a realizar
 $query_exec = mysql_query($query_search) or die(mysql_error());//Ejecuta la sentencia sql.
+$rows = array();
+
+
+print json_encode($rows);
 ?>
 
 
